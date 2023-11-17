@@ -1,4 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://by8b1vn3vrijp"]
+[gd_scene load_steps=11 format=3 uid="uid://by8b1vn3vrijp"]
+
+[ext_resource type="Texture2D" uid="uid://xpinc1gj0y67" path="res://Assets/texture_rock_albedo.png" id="1_mud7w"]
+[ext_resource type="Texture2D" uid="uid://dm4pni7i268d4" path="res://Assets/texture_rock_depth.png" id="2_u3d3a"]
+[ext_resource type="Texture2D" uid="uid://ctnyhu58r6gbs" path="res://Assets/texture_rock_metal.png" id="3_lakxc"]
+[ext_resource type="Texture2D" uid="uid://cx6nq1wsbhesc" path="res://Assets/texture_rock_normal.png" id="4_a4uaa"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqgch"]
 albedo_color = Color(0.286275, 0.313726, 0.341176, 1)
@@ -6,6 +11,22 @@ albedo_color = Color(0.286275, 0.313726, 0.341176, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_h61ua"]
 material = SubResource("StandardMaterial3D_rqgch")
 size = Vector3(2, 0.1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_htfpx"]
+albedo_color = Color(0.286275, 0.313726, 0.341176, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bltjk"]
+material = SubResource("StandardMaterial3D_htfpx")
+size = Vector3(2, 0.1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lhvtn"]
+albedo_texture = ExtResource("1_mud7w")
+metallic = 0.65
+metallic_texture = ExtResource("3_lakxc")
+normal_enabled = true
+normal_texture = ExtResource("4_a4uaa")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_u3d3a")
 
 [sub_resource type="BoxShape3D" id="12"]
 size = Vector3(2, 0.1, 2)
@@ -16,6 +37,10 @@ size = Vector3(2, 0.1, 2)
 
 [node name="Ground" type="MeshInstance3D" parent="StaticBody"]
 mesh = SubResource("BoxMesh_h61ua")
+
+[node name="Ground" type="MeshInstance3D" parent="StaticBody/Ground"]
+mesh = SubResource("BoxMesh_bltjk")
+surface_material_override/0 = SubResource("StandardMaterial3D_lhvtn")
 
 [node name="Ground_Collision" type="CollisionShape3D" parent="StaticBody"]
 shape = SubResource("12")

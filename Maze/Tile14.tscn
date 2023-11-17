@@ -1,4 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://dxjf807oko7sm"]
+[gd_scene load_steps=35 format=3 uid="uid://dxjf807oko7sm"]
+
+[ext_resource type="Texture2D" uid="uid://xpinc1gj0y67" path="res://Assets/texture_rock_albedo.png" id="1_x4pbf"]
+[ext_resource type="Texture2D" uid="uid://dm4pni7i268d4" path="res://Assets/texture_rock_depth.png" id="2_r2hmn"]
+[ext_resource type="Texture2D" uid="uid://ctnyhu58r6gbs" path="res://Assets/texture_rock_metal.png" id="3_mhqhw"]
+[ext_resource type="Texture2D" uid="uid://cx6nq1wsbhesc" path="res://Assets/texture_rock_normal.png" id="4_w6688"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_625vx"]
 albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
@@ -6,6 +11,30 @@ albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_ip3x2"]
 material = SubResource("StandardMaterial3D_625vx")
 size = Vector3(0.1, 2, 2)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0iymi"]
+load_path = "res://.godot/imported/texture_bricks.jpg-164e12eca04a4af9fd174c0cf5b4a228.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q6al8"]
+load_path = "res://.godot/imported/texture_bricks_depth.jpg-4101882ea7743d8fddbd40c0ca214255.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sfkp6"]
+load_path = "res://.godot/imported/texture_bricks_metal.jpg-40e0dd0e5fdffb8398e6804704552bfe.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wfehj"]
+load_path = "res://.godot/imported/texture_bricks_normal.jpg-657d285f7e524305fb87134c3dc75043.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_746l6"]
+albedo_color = Color(0.619608, 0.67451, 0.462745, 1)
+albedo_texture = SubResource("CompressedTexture2D_0iymi")
+metallic = 1.0
+metallic_texture = SubResource("CompressedTexture2D_sfkp6")
+emission_enabled = true
+emission = Color(0.0784314, 0.105882, 0.0470588, 1)
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_wfehj")
+heightmap_enabled = true
+heightmap_texture = SubResource("CompressedTexture2D_q6al8")
 
 [sub_resource type="BoxShape3D" id="5"]
 size = Vector3(0.1, 2, 2)
@@ -17,6 +46,30 @@ albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
 material = SubResource("StandardMaterial3D_giqhy")
 size = Vector3(2, 2, 0.1)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vkgbe"]
+load_path = "res://.godot/imported/texture_bricks.jpg-164e12eca04a4af9fd174c0cf5b4a228.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jbd7i"]
+load_path = "res://.godot/imported/texture_bricks_depth.jpg-4101882ea7743d8fddbd40c0ca214255.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d6usn"]
+load_path = "res://.godot/imported/texture_bricks_metal.jpg-40e0dd0e5fdffb8398e6804704552bfe.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iqjdx"]
+load_path = "res://.godot/imported/texture_bricks_normal.jpg-657d285f7e524305fb87134c3dc75043.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ykxy"]
+albedo_color = Color(0.619608, 0.67451, 0.462745, 1)
+albedo_texture = SubResource("CompressedTexture2D_vkgbe")
+metallic = 1.0
+metallic_texture = SubResource("CompressedTexture2D_d6usn")
+emission_enabled = true
+emission = Color(0.0784314, 0.105882, 0.0470588, 1)
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_iqjdx")
+heightmap_enabled = true
+heightmap_texture = SubResource("CompressedTexture2D_jbd7i")
+
 [sub_resource type="BoxShape3D" id="7"]
 size = Vector3(2, 2, 0.1)
 
@@ -26,6 +79,30 @@ albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_uw5o4"]
 material = SubResource("StandardMaterial3D_75gr2")
 size = Vector3(0.1, 2, 2)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0f6bf"]
+load_path = "res://.godot/imported/texture_bricks.jpg-164e12eca04a4af9fd174c0cf5b4a228.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m7v3y"]
+load_path = "res://.godot/imported/texture_bricks_depth.jpg-4101882ea7743d8fddbd40c0ca214255.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0x2so"]
+load_path = "res://.godot/imported/texture_bricks_metal.jpg-40e0dd0e5fdffb8398e6804704552bfe.s3tc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0ot65"]
+load_path = "res://.godot/imported/texture_bricks_normal.jpg-657d285f7e524305fb87134c3dc75043.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jn5oq"]
+albedo_color = Color(0.619608, 0.67451, 0.462745, 1)
+albedo_texture = SubResource("CompressedTexture2D_0f6bf")
+metallic = 1.0
+metallic_texture = SubResource("CompressedTexture2D_0x2so")
+emission_enabled = true
+emission = Color(0.0784314, 0.105882, 0.0470588, 1)
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_0ot65")
+heightmap_enabled = true
+heightmap_texture = SubResource("CompressedTexture2D_m7v3y")
 
 [sub_resource type="BoxShape3D" id="9"]
 size = Vector3(0.1, 2, 2)
@@ -37,6 +114,22 @@ albedo_color = Color(0.286275, 0.313726, 0.341176, 1)
 material = SubResource("StandardMaterial3D_lta4f")
 size = Vector3(2, 0.1, 2)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_enhyf"]
+albedo_color = Color(0.286275, 0.313726, 0.341176, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vcjpy"]
+material = SubResource("StandardMaterial3D_enhyf")
+size = Vector3(2, 0.1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ptw5a"]
+albedo_texture = ExtResource("1_x4pbf")
+metallic = 0.65
+metallic_texture = ExtResource("3_mhqhw")
+normal_enabled = true
+normal_texture = ExtResource("4_w6688")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_r2hmn")
+
 [sub_resource type="BoxShape3D" id="12"]
 size = Vector3(2, 0.1, 2)
 
@@ -47,6 +140,7 @@ size = Vector3(2, 0.1, 2)
 [node name="E" type="MeshInstance3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
 mesh = SubResource("BoxMesh_ip3x2")
+surface_material_override/0 = SubResource("StandardMaterial3D_746l6")
 
 [node name="E_Collision" type="CollisionShape3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
@@ -55,6 +149,7 @@ shape = SubResource("5")
 [node name="S" type="MeshInstance3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
 mesh = SubResource("BoxMesh_m6iwq")
+surface_material_override/0 = SubResource("StandardMaterial3D_7ykxy")
 
 [node name="S_Collision" type="CollisionShape3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
@@ -63,6 +158,7 @@ shape = SubResource("7")
 [node name="W" type="MeshInstance3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
 mesh = SubResource("BoxMesh_uw5o4")
+surface_material_override/0 = SubResource("StandardMaterial3D_jn5oq")
 
 [node name="W_Collision" type="CollisionShape3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
@@ -70,6 +166,10 @@ shape = SubResource("9")
 
 [node name="Ground" type="MeshInstance3D" parent="StaticBody"]
 mesh = SubResource("BoxMesh_5naoo")
+
+[node name="Ground" type="MeshInstance3D" parent="StaticBody/Ground"]
+mesh = SubResource("BoxMesh_vcjpy")
+surface_material_override/0 = SubResource("StandardMaterial3D_ptw5a")
 
 [node name="Ground_Collision" type="CollisionShape3D" parent="StaticBody"]
 shape = SubResource("12")

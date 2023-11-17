@@ -34,8 +34,8 @@ var tiles = [
 ]
 
 var tile_size = 2 						# 2-meter tiles
-var width = 50  						# width of map (in tiles)
-var height = 30  						# height of map (in tiles)
+var width = 20  						# width of map (in tiles)
+var height = 12  						# height of map (in tiles)
 
 func _ready():
 	randomize()
